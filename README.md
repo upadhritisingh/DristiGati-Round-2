@@ -12,6 +12,19 @@ The project explores how a mobile rover can combine obstacle detection, person d
 
 Our goal is to support rescue teams by helping them gather information from difficult-to-access areas—not to replace human rescuers or emergency-response professionals.
 
+## Relevant Links
+
+Hardware Simulation Link: https://wokwi.com/projects/479135462706510849
+How to use Simulation: https://github.com/upadhritisingh/DristiGati-Round-2/blob/main/Hardware/How%20to%20use%20Hardware%20Simulation.md
+Software Deployed: https://dristigati-frontend-kv0v.onrender.com
+
+Backend Github Repository: https://github.com/vermaishika439-bot/DristiGati-Backend
+Frontend Github Repository: https://github.com/vermaishika439-bot/DristiGati-Frontend
+
+Demo Video: https://drive.google.com/file/d/12O_pXVxKQQ4IcCYwZIC_jzuMyEexPcsN/view?usp=drive_link
+PPT: https://drive.google.com/file/d/19bWi2Q2GKOzUwS-Je5vbV2cZIkRHvPsu/view?usp=drive_link
+Idea Visual: https://drive.google.com/file/d/1lHKy4VYyFHW_NhWBd3YeYvQTTBn97rhM/view?usp=sharing
+
 ## Key Features
 
 - **Person detection:** A computer-vision pipeline using YOLO and OpenCV to identify people in camera footage.
