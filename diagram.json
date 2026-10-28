@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "author": "Disaster Rescue Rover Team",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": -20, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "frontSensor", "top": -160, "left": 180, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo1", "top": -160, "left": 380, "attrs": {} },
+    { "type": "wokwi-pushbutton", "id": "btnCliff", "top": 100, "left": 320, "attrs": { "color": "red", "label": "Cliff" } },
+    { "type": "wokwi-pushbutton", "id": "btnLeftObs", "top": 180, "left": 320, "attrs": { "color": "green", "label": "Left Obs" } },
+    { "type": "wokwi-pushbutton", "id": "btnRightObs", "top": 260, "left": 320, "attrs": { "color": "blue", "label": "Right Obs" } },
+    { "type": "wokwi-dc-motor", "id": "motorFL", "top": 140, "left": -240, "attrs": {} },
+    { "type": "wokwi-dc-motor", "id": "motorBL", "top": 280, "left": -240, "attrs": {} },
+    { "type": "wokwi-dc-motor", "id": "motorFR", "top": 140, "left": 360, "attrs": {} },
+    { "type": "wokwi-dc-motor", "id": "motorBR", "top": 280, "left": 360, "attrs": {} }
+  ],
+  "connections": [
+    [ "frontSensor:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "frontSensor:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "frontSensor:TRIG", "esp:23", "green", [ "v0" ] ],
+    [ "frontSensor:ECHO", "esp:4", "blue", [ "v0" ] ],
+    
+    [ "servo1:V+", "esp:5V", "red", [ "v0" ] ],
+    [ "servo1:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "servo1:PWM", "esp:13", "yellow", [ "v0" ] ],
+    
+    [ "btnCliff:1.l", "esp:33", "orange", [ "v0" ] ],
+    [ "btnCliff:2.l", "esp:GND.1", "black", [ "v0" ] ],
+    
+    [ "btnLeftObs:1.l", "esp:15", "green", [ "v0" ] ],
+    [ "btnLeftObs:2.l", "esp:GND.1", "black", [ "v0" ] ],
+    
+    [ "btnRightObs:1.l", "esp:32", "purple", [ "v0" ] ],
+    [ "btnRightObs:2.l", "esp:GND.1", "black", [ "v0" ] ],
+    
+    [ "motorFL:V+", "esp:25", "red", [ "v0" ] ],
+    [ "motorFL:V-", "esp:GND.1", "black", [ "v0" ] ],
+    [ "motorBL:V+", "esp:25", "red", [ "v0" ] ],
+    [ "motorBL:V-", "esp:GND.1", "black", [ "v0" ] ],
+    
+    [ "motorFR:V+", "esp:27", "red", [ "v0" ] ],
+    [ "motorFR:V-", "esp:GND.1", "black", [ "v0" ] ],
+    [ "motorBR:V+", "esp:27", "red", [ "v0" ] ],
+    [ "motorBR:V-", "esp:GND.1", "black", [ "v0" ] ]
+  ]
+}
