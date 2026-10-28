@@ -1,5 +1,7 @@
 # 🤖 DristiGati: Autonomous Disaster Rescue Rover
 
+SIMULATION LINK: https://wokwi.com/projects/479135462706510849
+
 An intelligent, 4-wheel drive autonomous reconnaissance rover engineered to navigate hazardous disaster zones, autonomously dodge obstacles and drop-offs, and stream real-time visual telemetry to an AI-powered React dashboard for survivor rescue operations.
 
 ---
